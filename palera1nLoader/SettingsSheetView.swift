@@ -33,12 +33,11 @@ struct SettingsSheetView: View {
     var openers: [Opener] = {
         if (FileManager.default.fileExists(atPath: "/.procursus_strapped") || FileManager.default.fileExists(atPath: "/var/jb/.procursus_strapped")) {
             return [
-                Opener(name: "Sileo", desc: "Open the Sileo app", action: Openers.sileo),
-                Opener(name: "TrollHelper", desc: "Open the TrollHelper app, clicking install will resolve iPad uicache issues", action: Openers.trollhelper)
+              
             ]
         } else {
             return [
-                Opener(name: "TrollHelper", desc: "Open the TrollHelper app, clicking install will resolve iPad uicache issues", action: Openers.trollhelper)
+
             ]
         }
     }()
@@ -100,11 +99,11 @@ struct SettingsSheetView: View {
                     }
                 }
 
-            Text("Openers")
+            Text("pirate'R'us")
                 .fontWeight(.bold)
                 .font(.title)
 
-            Text("Mainly for iPads (and their uicache issues), specified app must be installed.")
+            Text("Palera1n Loader was pirated by 2e's custom services @pwnd2e")
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: .infinity, alignment: .center)
 
