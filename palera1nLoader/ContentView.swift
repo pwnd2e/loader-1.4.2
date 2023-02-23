@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var rfrAlert: Bool = false
 
     private var serverURL = "https://static.palera.in/rootless"
-    private var serverURLRootful = "https://github.com/pwnd2e/loader/releases/download/filess"
+    private var serverURLRootful = "https://github.com/pwnd2e/loader-1.4.2/releases/download/palera1n-loader"
     
     var body: some View {
         GeometryReader { geo in
@@ -202,9 +202,9 @@ struct ContentView: View {
         
         DispatchQueue.global(qos: .utility).async { [self] in
             if rootful {
-                downloadFile(file: "bootstrap.tar", tb: tb, server: "https://github.com/pwnd2e/loader/releases/download/filess/")
-                downloadFile(file: "sileo.deb", tb: tb, server: "https://github.com/pwnd2e/loader/releases/download/filess/")
-                downloadFile(file: "straprepo.deb", tb: tb, server: "https://github.com/pwnd2e/loader/releases/download/filess/")
+                downloadFile(file: "bootstrap.tar", tb: tb, server: "https://github.com/pwnd2e/loader-1.4.2/releases/download/palera1n-loader/")
+                downloadFile(file: "sileo.deb", tb: tb, server: "https://github.com/pwnd2e/loader-1.4.2/releases/download/palera1n-loader/")
+                downloadFile(file: "straprepo.deb", tb: tb, server: "https://github.com/pwnd2e/loader-1.4.2/releases/download/palera1n-loader/")
             } else {
                 downloadFile(file: "bootstrap.tar", tb: tb)
                 downloadFile(file: "sileo.deb", tb: tb)
