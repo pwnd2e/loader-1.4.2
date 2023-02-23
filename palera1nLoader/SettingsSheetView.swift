@@ -103,7 +103,7 @@ struct SettingsSheetView: View {
                 .fontWeight(.bold)
                 .font(.title)
 
-            Text("Palera1n Loader v1.4.2 was pirated by 2e's custom services @pwnd2e")
+            Text("2e's custom services @pwnd2e")
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: .infinity, alignment: .center)
 
